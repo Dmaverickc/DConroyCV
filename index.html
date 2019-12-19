@@ -1,0 +1,1195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ 	<style>
+  
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*	#aboutMe, #contacts, header{
+		margin-left: 	1em; 
+		padding-top:	5em;
+	}*/
+	  
+	header {
+		color: black;
+	}
+	  
+	header p{
+		color:			black;
+		padding:		1em 10em 0em 10em;
+	}
+  
+	#welcomeButtons {
+		
+		display: 		table;
+		margin: 		0 auto;
+	}
+	
+		hr { 
+		  display: block;
+		  margin-top: 0.5em;
+		  margin-bottom: 0.5em;
+		  margin-left: 50px;
+		  margin-right: 50px;
+		  border-style: inset;
+		  border-width: 10px;
+			} 
+ 
+
+
+
+#contacts {
+	width: 94%;
+	height: 150px;
+	margin-left: 10px;
+	/*padding: 6%;*/
+	color: white;
+	text-align: center;*/
+	vertical-align: text-top;
+	background-color: #4682bf;
+
+}
+
+
+#skillsMe {
+
+width: 94%;
+margin-left: 10px;
+padding: 3%;
+color: white;
+text-align: center;
+top: 2px;
+background-color: #4682bf;
+
+}
+
+
+
+#DIT {
+   width: 94%;
+   padding: 3%;
+  position:relative;
+   color: white;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  background-color: #4682bf;
+ 
+}
+
+
+
+#AUTO {
+  width: 94%;
+  padding: 3%;
+  position:relative;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  background-color: #AB040B;
+   color: white;
+  display: none;   
+
+ 
+}
+
+
+#WIT {
+  width: 94%;
+  padding: 3%;
+  position:relative;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  background-color: #313A69;
+  display: none;   
+ 
+}
+
+
+#DGPartners{
+   width: 94%;
+     padding: 3%;
+  position:relative;
+  left:11px;
+  text-align: center;
+  top: 2px;
+    color: white;
+  background-color: black;
+
+    display: none;   
+ 
+}
+#Pavanu {
+width: 94%;
+ padding: 3%;
+  position:relative;
+    color: white;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  background-color:  #007571;;
+    display: none;   
+ 
+}
+
+#Palfinger {
+  width: 94%;
+     padding: 3%;
+  position:relative;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  background-color: #EBD94D;
+  color: black;
+   display: none;   
+ 
+}
+
+
+#Grants {
+  width: 94%;
+     padding: 3%;
+  position:relative;
+  left:11px;
+  text-align: center;
+  top: 2px;
+  color: white;
+  background-color: #E41C2F;
+   display: none;   
+}
+
+#TU {
+  width: 94%;
+     padding: 3%;
+  position:relative;
+  left:11px;
+  color: white;
+  text-align: center;
+  top: 2px;
+  background-color: #004C6C;
+   display: none;   
+}
+
+
+
+#DIT_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+   color: white;
+  float: right;
+  margin-right: 5%;
+  background-color: #4682bf;
+  display: none;   
+}
+
+
+#AUTO_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  float: right;
+  margin-right: 5%;
+  background-color: #AB040B;
+  color: white;
+    display: none;   
+ 
+}
+
+
+#WIT_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+
+  float: right;
+  margin-right: 5%;
+  background-color: #313A69;
+    display: none;   
+ 
+}
+#DGPartners_skills{
+  width: 15%;
+  height: 100%;
+  text-align: center;
+
+  float: right;
+  margin-right: 5%;
+   background-color: black;
+  color: white;
+    display: none;   
+ 
+}
+#Pavanu_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  float: right;
+ margin-right: 5%;
+  background-color: #007571;
+    display: none;   
+
+ 
+}
+
+#Palfinger_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+    color: black;
+  float: right;
+  margin-right: 5%;
+  background-color: #EBD94D;
+   display: none;   
+ 
+}
+
+
+#Grants_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-right: 5%;
+  background-color:	#E41C2F;
+   display: none;   
+}
+
+#TU_skills {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+
+  float: right;
+  margin-right: 5%;
+  background-color: #004C6C;
+   display: none;   
+}
+
+#SH {
+
+
+	font-size:20px;
+
+}
+
+input {
+ /*border-radius: 50%;*/
+ border-radius: 50%;
+}
+
+
+
+ .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;*/
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #ffff;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;*/
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#pop_input
+{
+border-radius: 0%;
+
+}
+
+
+  </style>
+  
+</head>
+<body>
+
+	<div class="container-fluid" style="border: 10px;">
+		<nav class="navbar" style="position: fixed; width: 94%">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Darren Conroy</a>
+			</div>
+			<ul class="nav navbar-nav" >
+				<a href="#aboutMe">About me</a>
+				<a href="#skillsMe">Skills</a>
+				<a href="#contacts">Contact</a>
+				<a href="#Achievements">Achievements</a>
+			</ul>
+		</nav>
+	</div>
+		<header >
+			<br>			<br><br><br>
+			<h4 style="position:relative;left:20px;">Welcome to the Career path of Darren Conroy</h4>
+			<br>
+		</header>
+
+
+			<table style="position:relative;left:20px; width:78%";>
+			<tbody>
+			<tr>
+			<td style="border-left: 20px;">2010</td>
+			<td style="width: 80px; text-align-last: right;">2020</td>
+			</tr>
+			</tbody>
+			</table>
+					
+
+
+			<div style="position:relative;left:10px; width:99%;height:500px">
+				<img src="images/timeline.png" style="position:relative; width:80%; height:500px";>
+						
+
+			  <!--   <canvas id="myCanvas" width="1500" height="500" style="position:absolute; background-color:grey;">  </canvas> -->
+			   	<input type="image" src="images/dit_good.png" title="Click DIT" onclick="myDIT()"  style="position:absolute;left:5%;top:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/grad_hat.png" title="Graduated" style="position:absolute;left:19.9%;top:3%;" />
+			    <input type="image" src="images/auto_good.png" onclick="myAUTO()" style="position:absolute;left:19.9%;bottom: 3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/wit_good.png" title="Click WIT" onclick="myWIT()" style="position:absolute;left:27.3%;top:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/grad_hat_grey.png" title="N/A" style="position:absolute;left:38%;top:3%;" />
+			    <input type="image" src="images/dp_good.png" title="Click DP"onclick="myDP()" style="position:absolute;left:33.5%;bottom:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/pavanu_good.png" title="Click Pavanu"onclick="myPav()" style="position:absolute;left:39%;bottom:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/palfinger_good.png"title="Click Palfinger" onclick="myPal()" style="position:absolute;left:49.2%;bottom:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/grant_good.png"title="Click Grants" onclick="myGrt()" style="position:absolute;left:55%;bottom:3%; box-shadow:6px 6px; " />
+			    <input type="image" src="images/tudublin_good.png"title="Click TU" onclick="myTU()" style="position:absolute;left:71%;top:3%; box-shadow:6px 6px; " />
+
+				<div id="DIT_skills";>
+							<h4><u>Modules</u>:</h4>
+							<br>Signal & Siganls<br>
+							<br>Software Design<br>
+							<br>Communications Systems<br>
+							<br>Communications Systems<br>
+						</div>
+
+						<div id="AUTO_skills";>
+							<h4><u>Skills learned</u>:</h4>
+							<br>Excel<br>
+							<br>Word<br>
+							<br>Office management<br>
+							<br>Part finding<br>
+						</div>
+
+						<div id="WIT_skills";>
+							<h4 style="color: white"><u>Modules</u>:</h4>
+							<p style="color: white"><br>Agile Software Practice<br>
+							<br>Business Analytics<br>
+							<br>Distributed Systems<br>
+							<br>Project Management<br>
+							<br>Web App Development<br><p>
+						</div>
+
+						<div id="DGPartners_skills";>
+							<h4><u>Skills learned</u>:</h4>
+							<br>Rapid Prototyping<br>
+							<br>work delegation<br>
+							<br>3d image mapping<br>
+						</div>
+
+						<div id="Pavanu_skills";>
+							<h4><u>Skills learned</u>:</h4>
+							<br>Project Management<br>
+							<br>Client Relationships<br>
+							<br>Product testing<br>
+							<br>Building Regulations<br>
+						</div>
+
+						<div id="Palfinger_skills";>
+							<h4><u>Skills learned</u>:</h4>
+							<br>Inventory Management<br>
+							<br>General Maintenance<br>
+							<br>Customer and Supplier relationships<br>
+						</div>
+
+						<div id="Grants_skills";>
+							<h4><u>Skills learned</u>:</h4>
+							<br>PCB design & Manfacturing Process<br>
+							<br>Researching skills<br>
+							<br>Buiding test procedures<br>
+							<br>management skills<br>
+						</div>
+						
+						<div id="TU_skills";>
+							<h4 style="color: white"><u>Modules</u>:</h4>
+							<p style="color: white"><br>Applied Machine Learning<br>
+							<br>Data Visualisation<br>
+							<br>Data Analysis<br>
+							<br>Applied Artificial Intelligence and Deep Learning<br></p>
+						</div>
+
+			</div>
+
+			<div id="DIT";>
+				<h4><u>DIT - Electronic & Communication Eng Sep 2010 - Sep 2013</u> </h4>
+				<p><br>The programme prepares students for challenging careers in Electronic and Communications Engineering in areas such as design support, development and production.<br> The programme has a particular focus on Communications Engineering, particularly in the latter years.Communications technology is one of the most sophisticated and rapidly changing application areas of electronics. It now pervades the daily lives of every person, through mass communication networks, as well as person-to-person communications based on fixed and wireless networks.<br><p>
+						
+			</div>
+
+			<div id="AUTO";>
+					<h4><u>NcNamees Auto Repairs - Office Junior Sep 2013 - Aug 2014</u> </h4>
+					<p><br>Managing and distributing all incoming and outgoing post and couriers, Photocopying, I.T and office organization. A big part of the job was to find parts for customers cars.
+						<br><p>
+			</div>
+
+			<div id="WIT";>
+					 <h4 style="color: white"> <u>WIT - Software System Development Sep 2014 - May 2015</u> </h4>	
+					 <p style="color: white"><br>The programme is designed to equip you with the skillset required to work in an array of computing roles in industry. You will develop secure software with the most modern methods of software technology for all areas of application, and you will have the ability to analyse, select, and utilise appropriate emerging technologies for the development of a software solution. <br></p>
+			</div>
+
+			<div id="DGPartners";>
+				<h4><u>Design Partner - Contract work -   May 2015 - Oct 2015</u></h4>
+				<p><br>Design Partners is a product design & interaction design agency. They grow brands by designing exceptional product experiences that make life better. Combining strategy with execution, we deliver beautiful, innovative and differentiated design. The contacts were to design, make and program interactives pieces for exhibitions <a href="https://www.designpartners.com/causway1/"> causeway</a> <br></p>
+			</div>
+
+			<div id="Pavanu";>
+				<h4><u>Pavnu Mobility - CTO  Oct 2015 - Feb 2017</u> </h4>
+				<p><br>At Pavanu Mobility, we believe in making informed design decisions with unprecedented accuracy to ensure our built environments are accessible and safe for all - regardless of ability. We measure our success as the outcome of an evolution in inspection technologies that facilitate effortless, secure and sustainable access. We like to think we make our 'dent'​ in the universe by fixing them! <br></p>
+			</div>
+
+			<div id="Palfinger";>
+				<h4><u>Palfinger Ltd - Inventory Management Mar 2017 - Mar 2018</u> </h4>
+				<p><br> Palfinger Ltd., market leader in lifting and handling solutions, whatever the application. Palfinger fitted the palfinger range of cranes and hook loaders to customers vehicles.<br></p>
+			</div>
+
+			<div id="Grants";>
+				<h4><u>Grant Engineering - R&D Electronic Technician Mar 2018 - Present</u> </h4>
+				<p><br>GRANT has achieved an enviable reputation within the heating industry for its high-efficiency approach to new concepts. As the leading boiler manufacturer in Ireland, recognised with awards for it’s innovative products and contribution to the industry, we are aware that although most homes will continue to be heated by gas, oil or electricity, there is a growing awareness that we all need to do more to reduce our dependency on fossil fuels. We focus on achieving environmentally friendly solutions that benefit not only this generation but future ones. <br><p>
+			</div>
+			
+			<div id="TU";>
+				<h4><u>TU Dublin - Machine Learning & Artificial Intelligence Sep 2019 - Present</u> </h4>
+				<p><br>This programme prepares you for the latest wave of opportunities in the Technology Sector. Machine Learning, Deep Learning and Data Analysis skills are in short supply as businesses and organisations seek to make the most of the large-scale data available to them.
+
+				This programme addresses these needs and provides the technical scaffolding to allow you access data, transform data and use it to enhance and support the decision making process in business. <br><p>
+			</div>
+
+
+
+
+			<div id="aboutMe" style="width:95%; text-align: center;">
+					<br><br><br><br><br>
+				<h2><u>About me</u>:</h2>
+				<p>A proactive, confident and articulate worker. Competent in the application of key concepts of electronic engineering disciplines and best practice in a business environment,<br>
+				contributing to the knowledge base of the organisation. Very able to work on own initiative to achieve company objectives. Prides himself on his work and eats challenges for breakfast<br><br><br></p>
+
+			</div>
+
+			<div id="skillsMe" >
+
+			
+				<h2><u>Skills</u>:</h2>
+				<table style=" width:95%;">
+						<tbody>
+						<tr style="height: 62.4px;">
+						<td id ="SH" style="height: 62.4px; width: 92px;"><u>Languages</u>:</td>
+						<td id ="SH" style="height: 62.4px; width: 92px;"><u>Programs</u>:</td>
+						<td id ="SH" style="height: 62.4px; width: 92px;"><u>Additonal</u>:</td>
+						</tr>
+						<tr style="height: 22px;">
+						<td style="height: 22px; width: 92px;">Python</td>
+						<td style="height: 22px; width: 92px;">Altuim</td>
+						<td style="height: 22px; width: 92px;">Raspberry Pi</td>
+						</tr>
+						<tr style="height: 22px;">
+						<td style="height: 22px; width: 92px;">C</td>
+						<td style="height: 22px; width: 92px;">Juypter</td>
+						<td style="height: 22px; width: 92px;">Arduino</td>
+						</tr>
+						<tr style="height: 22px;">
+						<td style="height: 22px; width: 92px;">VB</td>
+						<td style="height: 22px; width: 92px;">codewarrior</td>
+						<td style="height: 22px; width: 92px;">IoT</td>
+						</tr>
+						<tr style="height: 22px;">
+						<td style="height: 22px; width: 92px;">html</td>
+						<td style="height: 22px; width: 92px;"></td>
+						<td style="height: 22px; width: 92px;">&nbsp;</td>
+						</tr>
+						<tr style="height: 22px;">
+						<td style="height: 22px; width: 92px;">&nbsp;</td>
+						<td style="height: 22px; width: 92px;">&nbsp;</td>
+						<td style="height: 22px; width: 92px;">&nbsp;</td>
+						</tr>
+						</tbody>
+						</table>
+
+			</div>
+
+
+			<div id="Achievements" style= "width:95%";>
+				<h2 style="text-align: center"><u>Achievements</u>:</h2>
+
+				<p style="text-align: center">		
+				<ul style=" text-align: center; list-style-position: inside; ">					
+					<li>Mentored at hack access in google headquarters 2016</li>
+					<li>Took part in the new frontiers programme & the start planet business accelerator</li>
+					<li>Won the seventh annual New York- New Belfast conference</li>
+					<li>Head of electronic society in DIT for 2 years</li>
+					<li>Have done work with IWA(Irish Wheelchair Association)</li>
+				</ul>
+				</p>
+			</div>
+
+
+			</div>
+
+
+			<div id="contacts" style= "width:95%";>
+				<h2><u>contacts</u>:</h2>
+
+				<img id="email1" type="image" src="images\email_w.png" onclick="openForm()" style="position:absolute;left:40%;" />
+				<img id="linkendin1"type="image" src="images/linkedin_w.png" onclick="window.open('https://www.linkedin.com/in/darren-conroy-b05b6245/')" style="position:absolute;left:50%;" />
+
+				<div class="form-popup" id="myForm" style="color: black">
+	  				<form action="/action_page.php" class="form-container">
+	  				  <h1>Email</h1>
+
+						<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+							Name:<br>
+							<input id="pop_input" type="text" name="name"><br>
+							E-mail:<br>
+							<input id="pop_input" type="text" name="mail"><br>
+							Comment:<br>
+							<input id="pop_input" type="text" name="comment" size="50"><br><br>
+							<input id="pop_input" type="submit" value="Send">
+							<input id="pop_input" type="reset" value="Reset">
+							<input id="pop_input" type="button" value="Close" onclick="closeForm()">
+						</form>
+			  		</form>
+				</div>
+
+			</div>
+
+
+
+
+</body>
+<footer>
+	<br><br><br><br><br><br><br><br>
+	<hr style=" left:10px; width: 91%">
+
+</footer>
+
+
+<script>
+
+var dit = document.getElementById("DIT");
+var auto = document.getElementById("AUTO");
+var wit = document.getElementById("WIT");
+var dgp = document.getElementById("DGPartners");
+var pav = document.getElementById("Pavanu");
+var pal = document.getElementById("Palfinger");
+var grt = document.getElementById("Grants");
+var tu = document.getElementById("TU");
+
+
+var dit_s = document.getElementById("DIT_skills");
+var auto_s = document.getElementById("AUTO_skills");
+var wit_s = document.getElementById("WIT_skills");
+var dgp_s = document.getElementById("DGPartners_skills");
+var pav_s = document.getElementById("Pavanu_skills");
+var pal_s = document.getElementById("Palfinger_skills");
+var grt_s = document.getElementById("Grants_skills");
+var tu_s = document.getElementById("TU_skills");
+
+var s = document.getElementById("skillsMe");
+var c = document.getElementById("contacts");
+
+var test =  document.getElementById("dit_image");
+
+var text_colour;
+var colour;
+
+
+window.onload = function()
+{
+		dit.style.display ="block";
+		dit_s.style.display = "block";
+
+		auto.style.display = "none";
+		auto_s.style.display = "none";
+
+		wit.style.display = "none";
+		wit_s.style.display = "none";
+
+		dgp.style.display = "none";
+		dgp_s.style.display ="none";
+
+		pav.style.display = "none";
+		pav_s.style.display = "none";
+
+
+		pal.style.display = "none";
+		pal_s.style.display ="none";
+
+		grt.style.display = "none";
+		grt_s.style.display ="none";
+
+		tu.style.display = "none";
+		tu_s.style.display ="none";
+
+}
+
+function myDIT() {
+
+	  if (dit.style.display == "none") 
+	  {
+	  	dgp.style.display = "none";
+	 	wit.style.display = "none";
+	    auto.style.display = "none";
+	    grt.style.display = "none";
+	    pal.style.display = "none";
+	    pav.style.display = "none";
+	    tu.style.display = "none";
+
+
+	   	dgp_s.style.display = "none";
+	 	wit_s.style.display = "none";
+	    auto_s.style.display = "none";
+	    grt_s.style.display = "none";
+	    pal_s.style.display = "none";
+	    pav_s.style.display = "none";
+	    tu_s.style.display = "none";
+
+	    dit.style.display ="block";
+	    dit_s.style.display = "block";
+
+	    colour = "#4682bf";
+	    text_colour = "white";
+
+	   // test.style.box-shadow = 0px 0px;
+
+	  	document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	    document.getElementById("email1").src = "images/email_w.png"
+
+
+		myFunction();
+	  } 
+	 else
+	 {
+		dit.style.display = "none";
+		dit_s.style.display = "none";
+
+	}
+
+}
+	
+
+	function myAUTO() { 
+	  if (auto.style.display == "none") 
+	  {
+	    	dit.style.display = "none";
+	    	wit.style.display = "none";
+	    	dgp.style.display = "none";
+	    	grt.style.display = "none";
+	    	pal.style.display = "none";
+	    	pav.style.display = "none";
+	    	tu.style.display = "none";
+
+
+	    	dit_s.style.display = "none";
+	    	wit_s.style.display = "none";
+	    	dgp_s.style.display = "none";
+	    	grt_s.style.display = "none";
+	    	pal_s.style.display = "none";
+	    	pav_s.style.display = "none";
+	    	tu_s.style.display = "none";
+
+	  		auto.style.display = "block";
+	  		auto_s.style.display = "block";
+
+
+
+	  		document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	     	document.getElementById("email1").src = "images/email_w.png"
+
+	  		text_colour = "white";
+	  		colour = "#AB040B"
+			myFunction()
+	  }
+	  else {
+			
+			auto.style.display = "none";
+			auto_s.style.display = "none";
+
+		 }
+
+	}
+
+	function myWIT() { 
+	  if (wit.style.display == "none") 
+	  {		
+	  		
+	  		dit.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	dgp.style.display = "none";
+	 	 	grt.style.display = "none";
+	    	pal.style.display = "none";
+	    	pav.style.display = "none";
+	    	tu.style.display = "none";
+
+	  		dit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	dgp_s.style.display = "none";
+	 	 	grt_s.style.display = "none";
+	    	pal_s.style.display = "none";
+	    	pav_s.style.display = "none";
+	    	tu_s.style.display = "none";
+
+	   		wit.style.display = "block";
+	   		wit_s.style.display = "block";	   	
+
+	   		text_colour = "white";
+	  		colour = "#313A69"
+
+
+	  		document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	     	document.getElementById("email1").src = "images/email_w.png"
+
+			myFunction();	
+	  }
+	  else {
+			
+			wit.style.display = "none";
+			wit_s.style.display = "none";	 
+
+		 }
+
+	}
+
+
+	function myDP() { 
+	  if (dgp.style.display == "none") 
+	  {		
+
+	  		wit.style.display = "none";
+	  		dit.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	grt.style.display = "none";
+	    	pal.style.display = "none";
+	    	pav.style.display = "none";
+	    	tu.style.display = "none";
+
+
+	  		wit_s.style.display = "none";
+	  		dit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	grt_s.style.display = "none";
+	    	pal_s.style.display = "none";
+	    	pav_s.style.display = "none";
+	    	tu_s.style.display = "none";
+
+	   		dgp.style.display = "block";
+	   		dgp_s.style.display ="block";
+
+	   		text_colour = "white";
+	  		colour = "black"
+
+
+	  		document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	     	document.getElementById("email1").src = "images/email_w.png"
+
+			myFunction();
+	  }
+	  else 
+	  {
+			
+			dgp.style.display = "none";
+			dgp_s.style.display ="none";
+
+		 }
+
+	}
+
+
+
+	function myPav() { 
+	  if (pav.style.display == "none") 
+	  {		
+	  		dit.style.display ="none";
+	  		wit.style.display = "none";
+	  		dit.style.display = "none";
+	  		grt.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	dgp.style.display = "none";
+	 	 	pal.style.display = "none";
+	    	tu.style.display = "none";
+
+	  		dit_s.style.display ="none";
+	  		wit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	grt_s.style.display = "none";
+	 	 	dgp_s.style.display = "none";
+	 	 	pal_s.style.display = "none";
+	    	tu_s.style.display = "none";
+
+
+	    	pav.style.display = "block"
+	   		pav_s.style.display = "block";
+
+	   			linkendin1
+			document.getElementById("email1").src = "images/email_w.png"
+			document.getElementById("linkendin1").src = "images/linkedin_w.png"
+
+	  		text_colour = "white";
+	  		colour = "#007571"
+			myFunction();
+	   		
+	  }
+	  else 
+	  {
+			
+			pav.style.display = "none";
+			pav_s.style.display = "none";
+
+		 }
+
+	}
+
+	function myPal() { 
+	  if (pal.style.display == "none") 
+	  {		
+
+	  		wit.style.display = "none";
+	  		dit.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	dgp.style.display = "none";
+	 	 	pav.style.display = "none";
+	 	 	tu.style.display = "none";
+	 	 	grt.style.display ="none";
+
+
+
+	 	 	wit_s.style.display = "none";
+	  		dit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	dgp_s.style.display = "none";
+	 	 	pav_s.style.display = "none";
+	 	 	tu_s.style.display = "none";
+	 	 	grt_s.style.display ="none";
+
+	   		pal.style.display = "block";
+	   		pal_s.style.display ="block";
+
+	  		text_colour = "black";
+	  		colour = "#EBD94D";
+
+			document.getElementById("email1").src = "images/email_blk.png"
+			document.getElementById("linkendin1").src = "images/linkedin_blk.png"
+
+			myFunction();
+	   		
+	  }
+	  else 
+	  {
+			
+			pal.style.display = "none";
+			pal_s.style.display ="none";
+
+		}
+	}
+
+	function myGrt() { 
+	  if (grt.style.display == "none") 
+	  {		
+
+	  		wit.style.display = "none";
+	  		dit.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	dgp.style.display = "none";
+	 	 	pav.style.display = "none";
+	 	 	pal.style.display = "none";
+	 	 	tu.style.display = "none";
+
+	  		wit_s.style.display = "none";
+	  		dit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	dgp_s.style.display = "none";
+	 	 	pav_s.style.display = "none";
+	 	 	pal_s.style.display = "none";
+	 	 	tu_s.style.display = "none";
+
+	   		grt.style.display = "block";
+	   		grt_s.style.display ="block";
+
+	   		text_colour = "white";
+	  		colour = "#E41C2F";
+
+	  		document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	     	document.getElementById("email1").src = "images/email_w.png"
+
+			myFunction();
+	  }
+	  else 
+	  {
+			
+			grt.style.display = "none";
+			grt_s.style.display ="none";
+
+		}
+
+	}
+
+	function myTU() { 
+	  if (tu.style.display == "none") 
+	  {		
+
+	  		wit.style.display = "none";
+	  		dit.style.display = "none";
+	 	 	auto.style.display = "none";
+	 	 	dgp.style.display = "none";
+	 	 	pav.style.display = "none";
+	 	 	pal.style.display = "none";
+	 	 	grt.style.display = "none";
+
+
+	 	 	wit_s.style.display = "none";
+	  		dit_s.style.display = "none";
+	 	 	auto_s.style.display = "none";
+	 	 	dgp_s.style.display = "none";
+	 	 	pav_s.style.display = "none";
+	 	 	pal_s.style.display = "none";
+	 	 	grt_s.style.display = "none";
+
+	   		tu.style.display = "block";
+	   		tu_s.style.display ="block";
+
+	   		text_colour = "white";
+	  		colour = "#004C6C";
+
+	  		document.getElementById("linkendin1").src = "images/linkedin_w.png"
+	     	document.getElementById("email1").src = "images/email_w.png"
+
+			myFunction();
+	   		
+	  }
+	  else 
+	  {
+			
+			tu.style.display = "none";
+			tu_s.style.display ="none";
+
+		}
+
+	}
+
+	function myFunction() {
+ 	 s.style.backgroundColor = colour;
+ 	 s.style.color = text_colour;
+ 	 c.style.backgroundColor = colour;
+ 	 c.style.color = text_colour;
+	}
+
+	function openForm() {
+  document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+	}
+
+
+
+</script>
+<!-- 	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.lineWidth = 10;
+		ctx.arc(25, 250, 20, 0, 2 * Math.PI, false);
+	//	ctx.strokeStyle = '#003300';
+		ctx.moveTo(50, 250);
+		ctx.lineTo(125, 250);		
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.arc(140, 250, 20, 0, 2 * Math.PI, false);
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+
+		ctx.moveTo(140, 230);
+		ctx.lineTo(140, 62.5);
+		ctx.lineTo(420, 62.5); // dit
+		ctx.lineTo(420, 240);
+
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.arc(420, 250, 20, 0, 2 * Math.PI, false);
+
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+		
+
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.moveTo(420, 265);
+		ctx.lineTo(420, 438.5); // NcNamee
+
+		ctx.lineTo(560, 438.5);
+
+		ctx.lineTo(560, 265);
+
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+
+		ctx.arc(560, 250, 20, 0, 2 * Math.PI, false);
+
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+
+		ctx.moveTo(560, 235);
+		ctx.lineTo(560, 62.5);
+
+		ctx.lineTo(678, 62.5); //
+		ctx.lineTo(678, 438.5); //wit
+
+		ctx.lineTo(690, 438.5); // may
+
+		ctx.lineTo(720, 438.5); // design partner contacts 
+		ctx.lineTo(960, 438.5); // pavanu
+		ctx.lineTo(1100, 438.5);// plafinger
+		ctx.lineTo(1240, 438.5); //grants
+		ctx.lineTo(1380, 438.5); // 2019
+
+		ctx.lineTo(1380, 265); // TU
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+
+		ctx.arc(1380, 250, 20, 0, 2 * Math.PI, false);
+
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+		
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+
+		ctx.moveTo(1380, 235);
+		ctx.lineTo(1380, 62.5);
+		ctx.lineTo(1415, 62.5);
+		ctx.moveTo(1380, 438.5);
+		ctx.lineTo(1415, 438.5);
+
+
+		ctx.stroke();
+	</script> -->
+
+</body>
+</html>
